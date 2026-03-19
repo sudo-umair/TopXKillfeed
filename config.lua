@@ -16,7 +16,7 @@ Config.Radius = {
 Config.showKillDistance = true
 
 Config.NPCs = {
-    enable = true,
+    enable = false,
     Label = "[NPC]",
     Names = {
         Male = {
@@ -50,7 +50,7 @@ Config.NPCs = {
 }
 
 Config.Animals = {
-    enable = true,
+    enable = false,
     Label = "[Animal]"
 }
 
