@@ -98,6 +98,9 @@ AddEventHandler('gameEventTriggered', function(event, args)
 
         if not IsEntityAPed(victim) then return end
 
+        -- Only show original player interactions, not NPCs
+        if not IsPedAPlayer(victim) or not IsPedAPlayer(killer) then return end
+
         if isFatal ~= 0 then
             local victimCoords = GetEntityCoords(victim)
             local killerCoords = GetEntityCoords(killer)
